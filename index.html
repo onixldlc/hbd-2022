@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;700&family=Gruppo&family=Indie+Flower&family=Pacifico&family=Permanent+Marker&family=Sacramento&family=Source+Code+Pro:ital,wght@0,200;0,900;1,200;1,900&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="./timer.css">
+
+	<script type="text/javascript" src="./js/utility.js"></script>
+	<script type="text/javascript" src="./js/main.js" defer></script>
+	<script type="text/javascript" src="./js/3dCalculations.js" defer></script>
+	<script type="text/javascript" src="./js/cookieStuff.js" defer></script>
+	<script type="text/javascript" src="./js/musicTracker.js" defer></script>
+
+<!-- 	font-family: 'Edu VIC WA NT Beginner', cursive;
+	font-family: 'Gruppo', cursive;
+	font-family: 'Indie Flower', cursive;
+	font-family: 'Pacifico', cursive;
+	font-family: 'Permanent Marker', cursive;
+	font-family: 'Sacramento', cursive;
+	font-family: 'Source Code Pro', monospace; -->
+	<title id="titleWeb">HBD Wahai Manusia</title>
+</head>
+<body>
+	<audio id="music" src="audio/hbdnopmus2.mp3"></audio>
+	<div class="container">
+		<div class="timer-container timer-select" onclick="onOff(); startMusic()">
+            <div class="text-item-container">
+                <p id="name" class="items">HBD Wahai Manusia</p>
+                <p id="nameReflection" class="reflection">HBD Wahai Manusia</p>
+            </div>
+            <div class="text-item-container off">
+                <p id="desc" class="items">Selamat ultah Wahai manusia, semoga sehat selalu</p>
+                <p id="descReflection" class="reflection">Selamat ultah Wahai manusia, semoga sehat selalu</p>
+            </div>
+			<div class="clue">
+				<p class="clue-text-1 off">click on me</p>
+				<p class="clue-text-2 off">you can click anywhere, try clicking on the corner of the screen</p>
+				<p class="clue-text-3 off">you can also drag your finger from side to side!</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

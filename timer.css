@@ -1,0 +1,133 @@
+@font-face {
+	font-family: elisein;
+	src: url(./font/Elisein.ttf);
+}
+
+html, body{
+	margin: 0;
+	height: 100%;
+	background-color: #313131;
+}
+p{
+	pointer-events: none;
+	font-size: 4em;
+	font-family: Sacramento;
+    margin: 0;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	overflow: hidden;
+}
+.timer-container{
+	height: 200%;
+	width: 200%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	position: relative;
+	transition-duration: 200ms;
+	flex-direction: column;
+}
+/* #name{
+	color: white;
+	filter: drop-shadow(0px 0px 2px #27ff9a);
+	pointer-events: none;
+    align-self: flex-end;
+	margin: 0;
+} */
+/* #desc{
+    text-align: center;
+	color: white;
+	filter: drop-shadow(0px 0px 2px #27ff9a);
+	pointer-events: none;
+	margin: 0;
+} */
+
+/* #timer-reflection{
+	color: white;
+	box-shadow: 0 0px 71px #27ff9a3b;
+	filter: drop-shadow(0px 0px 2px #27ff9a) drop-shadow(0px -6px 7px #27ff9a) drop-shadow(0px -12px 9px #27ff9a) blur(4px);
+	transform: perspective(1000px) translateY(17px) rotateX(-120deg);
+	transition-duration: 200ms;
+	background-color: #26c87c1c;
+	z-index: 0;
+	margin-top: 60px;
+	position: absolute;
+	top: calc(50% + 5px);
+	margin: 0;
+} */
+
+.items{
+    color: white;
+	filter: drop-shadow(0px 0px 2px #27ff9a);
+	transform: perspective(1000px) translateY(2px) rotateX(0);
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+}
+.reflection{
+    color: white;
+	box-shadow: 0 0px 71px #27ff9a3b;
+	filter: drop-shadow(0px 0px 2px #27ff9a) drop-shadow(0px -6px 7px #27ff9a) drop-shadow(0px -12px 9px #27ff9a) blur(4px);
+	transform: perspective(1000px) translateY(17px) rotateX(-120deg);
+	transition-duration: 200ms;
+	background-color: #26c87c1c;
+	z-index: 0;
+    top: calc(50% - 30px);
+	position: absolute;
+    pointer-events: none;
+}
+.text-item-container{
+	pointer-events: none;
+    position: absolute;
+    width: 50%;
+    top: calc(50%);
+    left: 50%;
+    translate: -50% -50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	transition-duration: 200ms;
+}
+
+.off{
+    opacity: 0;
+}
+
+.clue{
+    pointer-events: none;
+    position: absolute;
+    top:60%;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    display: flex;
+}
+.clue > p{
+	filter: drop-shadow(0px 0px 2px #ff0000);
+    width: 100%;
+    transition-duration: 750ms;
+}
+
+.clue-text-1{
+    position: absolute;
+}
+.clue-text-2{
+    position: absolute;
+}
+
+@media only screen and (max-width: 830px) {
+    p{
+    	font-size: 2em;
+    }
+    #descReflection{
+        display: none;
+    }
+    .clue > p{
+        width: 75%;
+    }
+}
